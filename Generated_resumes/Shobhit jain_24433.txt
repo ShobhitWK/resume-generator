@@ -1,0 +1,15 @@
+===========================================Resume=====================================
+| Name: Shobhit jain                                                                 |
+| Father Name: Rajesh jain                                                           |
+| Gender [M/F]: M                                                                    |
+| Address: 102 street no, 5 shreeji valley                                           |
+| Languages: Ruby python html css c++                                                |
+| Secondary class %: 82                                                              |
+| Senior secondary class %: 70                                                       |
+| College aggregate score: 8.2 cgpa                                                  |
+| Hobbies: Making music, coding                                                      |
+| Strengths: Agile, fast learner                                                     |
+| Mail ID: shobjain09@gmail.com                                                      |
+| Date of Birth: 2002-03-09                                                          |
+| Contact No.: 8770826767                                                            |
+======================================================================================

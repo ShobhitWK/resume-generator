@@ -84,8 +84,8 @@ module ResumeGeneration
 
             no = rand(0..99999) # to prevent from same file name error
 
-            unless File.exists?("resume_project/Generated_resumes/#{@resume_values["Name"]}_#{no}.txt")
-                @file = File.new("resume_project/Generated_resumes/#{@resume_values["Name"]}_#{no}.txt","w")
+            unless File.exists?("Generated_resumes/#{@resume_values["Name"]}_#{no}.txt")
+                @file = File.new("Generated_resumes/#{@resume_values["Name"]}_#{no}.txt","w")
 
                 # Adding values to the file
 
