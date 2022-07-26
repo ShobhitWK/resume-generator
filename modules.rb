@@ -22,6 +22,7 @@ module ResumeGeneration
                 else
                     puts "Enter your name to proceed!!!"
                 end
+                sleep(1)
                 system('clear')
 
             end
@@ -40,7 +41,7 @@ module ResumeGeneration
                     puts "Enter gnder in correct format. [M/F]"
                 end
                 system('clear')
-
+                sleep(1)
             end
 
             inputList = [
