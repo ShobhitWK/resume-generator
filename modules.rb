@@ -9,6 +9,8 @@ module ResumeGeneration
         def get_user_inputs
 
             name_validated = true
+            mf_validated = true
+
             while name_validated
                 system('clear')
 
@@ -24,9 +26,25 @@ module ResumeGeneration
 
             end
 
+            # "Gender [M/F]",
+
+            while mf_validated
+                system('clear')
+
+                print "Enter your Gender [M/F]: "
+                val = gets.chomp.to_s
+                if val.downcase == "m" or val.downcase == "f"
+                    @resume_values["Gender"]=val.capitalize()
+                    mf_validated = false
+                else
+                    puts "Enter gnder in correct format. [M/F]"
+                end
+                system('clear')
+
+            end
+
             inputList = [
                 "Father Name",
-                "Gender [M/F]",
                 "Address",
                 "Languages",
                 "School name",
