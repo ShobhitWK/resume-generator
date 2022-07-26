@@ -10,6 +10,8 @@ module ResumeGeneration
 
             name_validated = true
             while name_validated
+                system('clear')
+                
                 print "Enter your Name: "
                 val = gets.chomp.to_s
                 if !val.nil? && !val.empty?  # if in input is not given it will not add the query in resume
@@ -18,6 +20,8 @@ module ResumeGeneration
                 else
                     puts "Enter your name to proceed!!!"
                 end
+                system('clear')
+
             end
 
             inputList = [
@@ -32,12 +36,15 @@ module ResumeGeneration
                 "Strengths",
             ]
 
+            system('clear')
+
             for index in inputList
                 print "Enter your #{index}: "
                 val = gets.chomp.to_s
                 if !val.nil? && !val.empty?  # if input is not given it will not add the query in resume
                     @resume_values[index]=val.capitalize()
                 end
+                system('clear')
             end
 
             email_validated = true
@@ -45,6 +52,7 @@ module ResumeGeneration
             phone_validated = true
 
             while email_validated
+                system('clear')
                 print "Enter your Mail ID: "
                 email = gets.chomp.to_s
                 if email =~ EMAIL_REGEX                              # /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
@@ -53,9 +61,13 @@ module ResumeGeneration
                 else
                     puts "Invalid email entered!"
                 end
+                sleep(1)
+
             end
 
             while dob_validated
+                system('clear')
+
                 print "Enter your date of birth in (yyyy-mm-dd): "
                 dob = gets.chomp.to_s
                 if dob =~ DOB_REGEX                                  # /\d{4}-(0[1-9]|1[0-2])-/
@@ -64,9 +76,12 @@ module ResumeGeneration
                 else
                     puts "Invalid DOB entered use correct format"
                 end
+                sleep(1)
             end
 
             while phone_validated
+                system('clear')
+
                 print "Enter your contact no. in 9999999999 format: "
                 phone = gets.chomp.to_s
                 if phone =~ PHONE_NUMBER_REGEX                        # /^\(?[\d]{3}\)?[\s|-]?[\d]{3}-?[\d]{4}$/
@@ -75,6 +90,7 @@ module ResumeGeneration
                 else
                     puts "Invalid contact no. entered use correct format"
                 end
+                sleep(1)
             end
 
             return @resume_values
@@ -102,7 +118,7 @@ module ResumeGeneration
 
                 @file.puts("======================================================================================")
                 puts "======================================================================================"
-
+                system('clear')
                 puts "Sucessfully created resume file with name \"#{@resume_values["Name"]}_#{no}.txt\}\" in Generated_resumes folder."
 
             else

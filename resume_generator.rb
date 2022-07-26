@@ -16,9 +16,10 @@ include ResumeGeneration
 ResumeGenerator.new
 
 BEGIN{
+    system('clear')
     puts "===================================Resume Generator================================="
-}
-
-END{
-    puts "===================================================================================="
+    for i in 0..150
+        print "."
+        sleep(0.01)
+    end
 }
