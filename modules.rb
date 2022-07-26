@@ -11,7 +11,7 @@ module ResumeGeneration
             name_validated = true
             while name_validated
                 system('clear')
-                
+
                 print "Enter your Name: "
                 val = gets.chomp.to_s
                 if !val.nil? && !val.empty?  # if in input is not given it will not add the query in resume
@@ -29,8 +29,10 @@ module ResumeGeneration
                 "Gender [M/F]",
                 "Address",
                 "Languages",
+                "School name",
                 "Secondary class %",
                 "Senior secondary class %",
+                "College name",
                 "College aggregate score",
                 "Hobbies",
                 "Strengths",
@@ -119,7 +121,7 @@ module ResumeGeneration
                 @file.puts("======================================================================================")
                 puts "======================================================================================"
                 system('clear')
-                puts "Sucessfully created resume file with name \"#{@resume_values["Name"]}_#{no}.txt\}\" in Generated_resumes folder."
+                puts "Sucessfully created resume file with name \"#{@resume_values["Name"]}_#{no}.txt\" in Generated_resumes folder."
 
             else
                 puts "Sorry, File with same name already exists please try again!"

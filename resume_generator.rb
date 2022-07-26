@@ -18,8 +18,9 @@ ResumeGenerator.new
 BEGIN{
     system('clear')
     puts "===================================Resume Generator================================="
-    for i in 0..150
+    print "Loading"
+    for i in 0..130
         print "."
-        sleep(0.01)
+        sleep(0.005)
     end
 }
